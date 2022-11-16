@@ -87,7 +87,7 @@ def deltaT(m):
     d=np.zeros(len(m))
     for i in range(1,len(m)):
         d[i]=m[i-1]-m[i]
-        if [i]!=0:
+        if d[i]!=0:
             N+=1
     return (2.34*10**7)/N
 
